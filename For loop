@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int a,b;
+    cin>>a>>b;
+    string represent[11] = {"zero","one","two","three","four","five","six","seven",      "eight","nine","ten"};
+    for(int i=a;i<=b;i++){
+        if(i>9){
+            if(i%2==0)
+                cout<<"even \n";
+            else cout<<"odd \n";
+        }
+        else{
+            cout<<represent[i]<<"\n";
+        }
+    }
+}

@@ -1,0 +1,64 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+	int r, c, i, j;
+    int m1[10][10], m2[10][10], mul[10][10];
+ 
+    cout<<"\n\nEnter the number of Rows and Columns of matrix : ";
+    cin>>r>>c;
+    cout << "\nEnter the "<<r*c<<" elements of matrix 1 : \n";
+ 
+    for (i=0; i<r; i++) {
+        for (j=0; j<c; j++) {
+            cin>>m1[i][j];
+        }
+    }
+ 
+    cout << "\nEnter the "<<r*c<<" elements of matrix 2 : \n";
+ 
+    for (i=0; i<r; i++) {
+        for (j=0; j<c; j++) {
+            cin>>m2[i][j];
+        }
+    }
+ 
+    for (i=0; i<r; i++) {
+        for (j=0; j<c; j++) {
+            mul[i][j] = m1[i][j] * m2[i][j];
+        }
+    }
+ 
+    cout << "\n\nMatrix 1 is : \n";
+ 
+    for (i=0; i<r; i++) {
+        for (j=0; j<c; j++) {
+            cout << m1[i][j] << "  ";
+        }
+        cout<<"\n";
+    }
+ 
+    cout << "\n\nMatrix 2 is : \n";
+ 
+    for (i=0; i<r; i++) {
+        for (j=0; j<c; j++) {
+            cout << m2[i][j] << "  ";
+        }
+        cout<<"\n";
+    }
+ 
+    cout << "\n\nMultiplication of matrix 1 & 2 is : \n";
+ 
+    for (i=0; i<r; i++) {
+        for (j=0; j<c; j++) {
+            cout<<mul[i][j] << "  ";
+        }
+ 
+        cout<<"\n";
+    }
+ 
+    cout << "\n\n";
+ 
+    return 0;
+}
